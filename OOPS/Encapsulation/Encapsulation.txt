@@ -1,0 +1,31 @@
+Q:What is Encapsulation?
+Encapsulation is an OOPS concept to create and define the permissions 
+and restrictions of an object and its member variables and methods. 
+
+A very simple example to explain the concept is to make the 
+member variables of a class private and providing public getter and setter 
+methods. 
+
+Java provides four types of access level modifiers:
+public, protected, no modifier and private
+
+Encapsulation is one of the four fundamental OOP concepts. 
+The other three are inheritance, polymorphism, and abstraction.
+
+Encapsulation in Java is a mechanism of wrapping the data 
+(variables) and code acting on the data (methods) 
+together as a single unit. 
+
+In encapsulation, the variables of a class will be hidden 
+from other classes, and can be accessed only through the 
+methods of their current class. 
+Therefore, it is also known as data hiding.
+
+To achieve encapsulation in Java :
+Declare the variables of a class as private.
+
+Provide public setter and getter methods 
+to modify and view the variables values.
+
+
+

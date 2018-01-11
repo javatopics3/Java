@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="coreJava"/>
+	<classpathentry kind="src" path="Encode-and-Decode"/>
+	<classpathentry kind="src" path="Encryption-and-Decryption"/>
+	<classpathentry kind="src" path="Exception"/>
+	<classpathentry kind="src" path="geeksforgeeks"/>
+	<classpathentry kind="src" path="inheritance-and-polymorphism"/>
+	<classpathentry kind="src" path="JApps"/>
+	<classpathentry kind="src" path="Java"/>
+	<classpathentry kind="src" path="javatpoint"/>
+	<classpathentry kind="src" path="journaldevv"/>
+	<classpathentry kind="src" path="junit"/>
+	<classpathentry kind="src" path="KV Rao Sir"/>
+	<classpathentry kind="src" path="Multithreading"/>
+	<classpathentry kind="src" path="OOPS"/>
+	<classpathentry kind="src" path="OTP"/>
+	<classpathentry kind="src" path="programmingsimplified"/>
+	<classpathentry kind="src" path="Proj"/>
+	<classpathentry kind="src" path="Raghu"/>
+	<classpathentry kind="src" path="sanfoundry"/>
+	<classpathentry kind="src" path="String Interview Qns"/>
+	<classpathentry kind="src" path="Topics"/>
+	<classpathentry kind="src" path="UUID"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="lib" path="I:/jars/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="I:/jars/junit4-4.8.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

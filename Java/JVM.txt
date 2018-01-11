@@ -1,0 +1,67 @@
+An interpreter is a program that reads in as input a source program, 
+along with data for the program, and translates the source program 
+instruction by instruction. 
+For example, the Java interpreter java translate a .class file 
+into code that can be executed natively on the underlying machine.
+
+Is Java virtual machine an interpreter?
+JVM have both compiler and interpreter. Because the compiler compiles the code and generates bytecode. After that the interpreter converts bytecode to machine understandable code. Example: Write and compile a program and it runs on Windows.
+
+Why interpreter is used in Java?
+Answer: The Java compiler translates Java programs into a language called Java bytecode. Although bytecode is similar to machine language, it is not the machine language of any actual computer. A Java interpreter is used to run the compiled Java bytecode program.
+
+
+108
+down vote
+accepted
+First, let's have a clear idea of the following terms
+
+Javac is Java Compiler -- Compiles your Java code into Bytecode
+
+JVM is Java Virtual Machine -- Runs/ Interprets/ translates Bytecode into Native Machine Code
+
+JIT is Just In Time Compiler -- Compiles the given bytecode instruction sequence to machine code at runtime before executing it natively. It's main purpose is to do heavy optimizations in performance.
+
+So now, Let's find answers to your questions..
+
+1)JVM: is it a compiler or an interpreter? -- Ans: Interpreter
+
+2)what about JIT compiler that exist inside the JVM? -- Ans: If you read this reply completly, you probably know it now
+
+3)what exactly is the JVM? -- Ans:
+
+JVM is a virtual platform that resides on your RAM
+Its component, Class loader loads the .class file into the RAM
+The Byte code Verifier component in JVM checks if there are any access restriction violations in your code. (This is one of the principle reasons why java is secure)
+Next, the Execution Engine component converts the Bytecode into executable machine code
+Hope this helped you..
+
+In Java, programs are not compiled into executable files; they are compiled into bytecode (as discussed earlier), which the JVM (Java Virtual Machine) then executes at runtime. Java source code is compiled into bytecode when we use the javac compiler. The bytecode gets saved on the disk with the file extension .class .
+
+
+20
+down vote
+accepted
+The answer depends on what you mean by binary code.
+
+Java bytecode is a binary data format that includes loading information and execution instructions for the Java virtual machine. In that sense, Java bytecode is a special kind of binary code.
+
+When you use the term "binary code" to mean machine instructions for a real processors architecture (like IA-32 or Sparc) then it is different.
+Java bytecode is not a binary code in that sense. It is not processor-specific.
+
+firstly java source code is converted into Bytecode file by the translator named “Compiler”. The byte code file gets name with .class extension and javac (java compiler) is the tool to compile the .java file.
+
+Then,
+
+java is a tool use to invoke Java Interpreter “JVM”. Now, the work of JVM starts. When JVM invoke,
+
+1. a subprogram in JVM called Class loader (or system class loader) starts and load the bytecode into OS memory( or RAM).
+
+2. another subprogram Bytecode Verifier verify and ensure that the code do not violate the security rules. That’s why the java program is much secured and virus free.
+
+3. Then last subprogram Execution Engine finally converts bytecodes into machine code. The name of that engine are in use today is JIT Just In Compiler.
+
+before JIT, Silicon and adaptive execution engine were used but there performance was very degraded and slow.
+
+This is how actually the java program is compiled and interpreted. Hope you will understand it. Good luck !
+

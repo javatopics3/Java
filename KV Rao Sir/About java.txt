@@ -1,0 +1,4 @@
+Problem: Basically, the Exception in thread "main" java.lang.NoClassDefFoundError: means, that the class which you are trying to run was not found in the classpath. Solution: you need to add the class or .jar file which contains this class into the java classpath.
+
+Classpath is a parameter in the Java Virtual Machine or the Java compiler that specifies the location of user-defined classes and packages. The parameter may be set either on the command-line, or through an environment variable.
+
